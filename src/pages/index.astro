@@ -1,17 +1,252 @@
 ---
+import "aos/dist/aos.css";
 ---
 
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script src="https://kit.fontawesome.com/1f814a61ce.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width" />
-    <title>Title</title>
+    <title>RAJA MEISSNER</title>
   </head>
 
-  <body class="relative">
+  <body class="">
+    <!-- MAIN -->
+    <main class="h-[100vh]">
+      <header data-aos="fade-down" class="flex w-full justify-between items-center py-2 px-20">
+        <img class="w-10" src="../img/raja-logo.png" alt="">
+        
+        <!-- NAV DESKTOP -->
+        <nav id="nav-menu" class="hidden lg:flex relative gap-6">
+            <!-- Línea animada -->
+            <span id="hover-line" class="absolute bottom-0 h-[2px] bg-black transition-all duration-300 opacity-0"></span>
     
-  </body>
+            <a href="#" class="nav-link px-4 py-2">HOME</a>
+            <a href="#about" class="nav-link px-4 py-2">ABOUT ME</a>
+            <a href="#merch" class="nav-link px-4 py-2">MERCH</a>
+            <a href="#sponsors" class="nav-link px-4 py-2">SPONSORS</a>
+            <a href="/project" class="nav-link px-4 py-2">PROJECTS</a>
+        </nav>
+    
+        <button id="menu-toggle" class="lg:hidden text-black text-3xl">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+    
+        <!-- NAV MÓVIL -->
+        <nav id="nav-menu-2" class="fixed z-10 top-0 left-0 w-full h-screen bg-white text-black flex flex-col items-center justify-center gap-4 transform translate-x-full transition-transform duration-300 opacity-0 invisible">
+            <button id="close-menu" class="absolute top-4 right-6 text-3xl">
+              <i class="fa-solid fa-x"></i>
+            </button>
+            <a href="#" class="nav-link text-xl">HOME</a>
+            <a href="#about" class="nav-link text-xl">ABOUT ME</a>
+            <a href="#merch" class="nav-link text-xl">MERCH</a>
+            <a href="#artist" class="nav-link text-xl">SPONSORS</a>
+            <a href="/project" class="nav-link text-xl">PROJECTS</a>
+        </nav>
+    </header>
+    
+    
 
-  
+      <div class="flex flex-col justify-around">
+          <div data-aos="fade" data-aos-delay="200" class="flex justify-center flex-col items-center m-[40px]">
+            <h1 class="text-5xl font-bold mb-5 text-center">RAJA MEISSNER</h1>
+            <p class="text-2xl mb-5">Your favorite  girl metalhead drummer.</p>
+            <div class="mb-5">
+              <a href="#"><i class="fa-brands fa-patreon fa-xl scale-[150%] m-4"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram fa-xl scale-[150%] m-4"></i></a>
+              <a href="#"><i class="fa-brands fa-youtube fa-xl scale-[150%] m-4"></i></a>
+              <a href="#"><i class="fa-brands fa-tiktok fa-xl scale-[150%] m-4"></i></a>
+            </div>
+            <a href="#about"
+              class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-black backdrop-blur-lg px-1 py-1 w-[200px] text-base font-semibold text-white transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-gray-600/50 border border-white/20 cursor-pointer"
+            >
+              <span class="text-lg">Know me!</span>
+              <div
+                class="absolute inset-0 flex h-full w-full justify-center [transform:skew(-13deg)_translateX(-100%)] group-hover/button:duration-1000 group-hover/button:[transform:skew(-13deg)_translateX(100%)]"
+              >
+                <div class="relative h-full w-10 bg-white"></div>
+              </div>
+            </a>
+        </div>
+        <div data-aos="fade-up" data-aos-delay="400" class="flex justify-center ">
+          <img class="w-[90%] h-[250px] object-cover object-" src="../img/IMG-2.jpg" alt="raja meissner">
+        </div>
+      </div>
+    </main>
+    
+    <!-- ABOUT -->
+    <section id="about" class="min-h-[100vh] flex justify-center">
+      <div class="flex gap-6 justify-center items-center about-con">
+        <div data-aos="fade-right" class="max-w-xl flex flex-col justify-center p-5">
+          <h2 class="font-bold text-5xl">BIOGRAPHY</h2>
+          <p class="my-2 text-lg text-gray-900">
+            I was born in Germany, <span class="font-bold text-black">Frankfurt/Main</span> on <span class="font-bold text-black">March 6, 2000.</span>
+          </p>
+          <p class="my-2 text-xl text-gray-900">
+            After playing Oboe for 6 years, I started playing drums at the age of 14.
+          </p>
+          <p class="my-2 text-xl text-gray-900">
+            I started in a school band, played with the band Santa Jaws in 2016 and drummed the Germany tour of Psychovillage from Austria when I was 17.
+          </p>
+          <p class="my-2 text-xl text-gray-900">
+            In 2019, I started uploading drum covers on Instagram and later on YouTube.
+          </p>
+          <p class="my-2 text-xl text-gray-900">
+            Now I'm a full-time drummer and my biggest inspiration, as I'm sure you all know, is JOEY JORDISON and MEYTALL COHEN!
+          </p>
+          <p class="my-2 text-xl text-black font-bold">
+            I am open to new projects and bands! If you are interested, please send an e-mail to: <span class="underline">raja@wunderkidz.com</span>
+          </p>
+        </div>
+
+        <div>
+          <img data-aos="fade-left" class="w-[450px] h-[550px] object-cover p-5" src="../img/BIO-IMG.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MERCH -->
+     <section id="merch" data-aos="fade-up" class="flex flex-col justify-center mb-10">
+        <div class="grid self-center text-center">
+          <h3 class="font-bold text-4xl mb-3">CHECK OUT MY LIMITED MERCH COLLECTION</h3>
+          <p class="text-xl text-gray-900 mb-3">Only as long as stocks last!</p>
+            <span class="scale-[150%] m-auto transition-all duration-[.2s] bg-black w-[100px] h-[30px] items-center flex justify-center rounded-2xl text-[13px] hover:text-[14px]">
+              <a target="_blank" href="https://krasserstoff.com/raja-meissner" class="text-white">
+                SHOP <i class="fa-solid fa-store m-1"></i>
+              </a>
+            </span>
+        </div>
+     </section>
+
+     <span class="absolute left-1/2 h-1 w-[350px] bg-black -translate-x-1/2"></span>
+
+     <!-- SPONSORS -->
+      <section id="sponsors" data-aos="fade" class="py-1">
+        <div class="flex justify-center font-bold text-5xl my-10">
+          <h2>SPONSORS</h2>
+        </div>
+        <div class="sponsors overflow-hidden bg-white py-4">
+          <div class="sponsors-container flex w-[3000px] animate-slide">
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/evans.png" alt="evans">
+            </div>
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/promark.png" alt="promark">
+            </div>
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/yamaha.png" alt="yamaha">
+            </div>
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/meinl.png" alt="meinl">
+            </div>
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/electronics.png" alt="electronics">
+            </div>
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/steinberg.png" alt="steinberg">
+            </div>
+
+
+
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/evans.png" alt="evans">
+            </div>
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/promark.png" alt="promark">
+            </div>
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/yamaha.png" alt="yamaha">
+            </div>
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/meinl.png" alt="meinl">
+            </div>
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/electronics.png" alt="electronics">
+            </div>
+            <div class="sponsors-item flex-shrink-0 w-[250px] px-5">
+              <img class="w-full object-cover" src="../img/sponsors/steinberg.png" alt="steinberg">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- GALLERY -->
+      <section class="w-[80%] h-[300px] mx-auto overflow-hidden relative my-10">
+        <div id="vertical-slider" class="flex flex-col h-full transition-transform duration-500">
+          <img class="w-full h-full object-cover" src="../img/gallery/1.jpg" alt="Imagen 1">
+          <img class="w-full h-full object-cover" src="../img/gallery/2.jpg" alt="Imagen 2">
+          <img class="w-full h-full object-cover" src="../img/gallery/3.jpg" alt="Imagen 3">
+          <img class="w-full h-full object-cover object-bottom" src="../img/gallery/4.jpg" alt="Imagen 4">
+        </div>
+      </section>
+      
+      
+      
+
+      <!-- MANAGEMENT -->
+      <section data-aos="fade-up" class="text-center">
+          <div class="management-con flex justify-center items-center gap-10">
+            <div>
+              <h3 class="font-bold text-4xl">Business Inquiries</h3>
+              <p class="text-lg">E-Mail: raja@wunderkidz.com</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-4xl">Management</h3>
+              <p class="text-lg">Wunderkidz GmbH</p>
+            </div>
+          </div>
+          <div class="text-lg font-bold m-5">
+            <a target="_blank" href="https://wunderkidz.com/">www.wunderkidz.com</a>
+          </div>
+      </section>
+
+  </body>
+  <script src="../../src/js/script.js"></script>
+  <script src="../../src/js/global.js"></script>
+  <style is:global>
+    html{
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    .sponsors :hover{
+      animation-play-state: paused;
+    }
+    
+    @keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-250px * 6)); 
+  }
+}
+
+@media (max-width: 950px) {
+    #nav-menu {
+        display: none;
+    }
+    .about-con{
+      flex-direction: column;
+    }
+}
+@media (max-width: 600px){
+  .management-con{
+    flex-direction: column;
+  }
+}
+
+#nav-menu-2 {
+    display: flex;
+}
+
+/* Animaciones del menú móvil */
+.menu-open {
+    transform: translateX(0) !important;
+}
+.animate-slide {
+  animation: slide 15s linear infinite;
+}
+  </style>
 </html>

@@ -1,0 +1,167 @@
+---
+import "aos/dist/aos.css";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <script src="https://kit.fontawesome.com/1f814a61ce.js" crossorigin="anonymous"></script>
+        <title>RAJA MEISSNER</title>
+    </head>
+    <body>
+        <main class="h-[100vh]">
+            <header data-aos="fade-down" class="flex w-full justify-between items-center py-2 px-20">
+              <img class="w-10" src="../img/raja-logo.png" alt="">
+              
+              <!-- NAV DESKTOP -->
+              <nav id="nav-menu" class="hidden lg:flex relative gap-6">
+                  <!-- Línea animada -->
+                  <span id="hover-line" class="absolute bottom-0 h-[2px] bg-black transition-all duration-300 opacity-0"></span>
+          
+                  <a href="/" class="nav-link px-4 py-2">HOME</a>
+                  <a href="/#about" class="nav-link px-4 py-2">ABOUT ME</a>
+                  <a href="/#merch" class="nav-link px-4 py-2">MERCH</a>
+                  <a href="/#sponsors" class="nav-link px-4 py-2">SPONSORS</a>
+                  <a href="/project" class="nav-link px-4 py-2">PROJECTS</a>
+              </nav>
+          
+              <button id="menu-toggle" class="lg:hidden text-black text-3xl">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+          
+              <!-- NAV MÓVIL -->
+              <nav id="nav-menu-2" class="fixed z-10 top-0 left-0 w-full h-screen bg-white text-black flex flex-col items-center justify-center gap-4 transform translate-x-full transition-transform duration-300 opacity-0 invisible">
+                  <button id="close-menu" class="absolute top-4 right-6 text-3xl">
+                    <i class="fa-solid fa-x"></i>
+                  </button>
+                  <a href="/" class="nav-link text-xl">HOME</a>
+                  <a href="/#about" class="nav-link text-xl">ABOUT ME</a>
+                  <a href="/#merch" class="nav-link text-xl">MERCH</a>
+                  <a href="/#sponsors" class="nav-link text-xl">SPONSORS</a>
+                  <a href="/project" class="nav-link text-xl">PROJECTS</a>
+              </nav>
+          </header>
+          <div data-aos="fade-up" data-aos-delay="300" class="flex justify-center ">
+            <img class="w-[90%] h-[250px] object-cover object-" src="../img/PRO-1.jpg" alt="raja meissner">
+          </div>
+          <div data-aos="fade-up" data-aos-delay="500" class="flex flex-col items-center py-10 gap-5">
+            <h2 class="text-5xl font-bold">PROJECTS</h2>
+            <p class="text-xl">Watch out my projects, you can also watch full of them and my videos on my <a class="underline" target="_blank" href="https://youtube.com">YouTube</a> channel!</p>
+            <a href="#projects"
+              class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-black backdrop-blur-lg px-1 py-1 w-[200px] text-base font-semibold text-white transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-gray-600/50 border border-white/20 cursor-pointer"
+            >
+              <span class="text-lg">My projects!</span>
+            </a>
+          </div>
+          </main>
+
+          <!-- PROJECTS -->
+          <section class="max-w-6xl mx-auto px-4 space-y-16">
+
+            <!-- MARTI FISCHER - SOAD -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold">MARTI FISCHER - SOAD <span class="font-normal text-3xl">April, 2024</span></h3>
+                    <p>I supported <span>Marti Fischer</span> with his new video "The Sound of SYSTEM OF A DOWN"! We wrote a song a la SOAD and then recorded it.</p>
+                    <p>It was so much fun to work with Marti! Check out the video!</p>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/v5q30VphHzg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen data-aos="fade-left">
+                </iframe>
+            </div>
+        
+            <!-- MIKE SHINODA - ALREADY OVER SESSIONS -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold">MIKE SHINODA - ALREADY OVER SESSIONS <span class="font-normal text-3xl">January, 2024</span></h3>
+                    <p>I had the great honor of working with Mike Shinoda!</p>
+                    <p>Mike is one of the most creative people I know and is such a good producer, musician and has such a great personality.</p>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kt-1Ddhe8W0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen data-aos="fade-left">
+                </iframe>
+            </div>
+        
+            <!-- EU - Tour with BÖSE FUCHS -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold">EU - Tour with BÖSE FUCHS <span class="font-normal text-3xl">November, 2023</span></h3>
+                    <p>We were on the road the whole of November 2023, 19 cities, 7 countries!</p>
+                    <p>This tour showed me once again that I LOVE playing live!</p>
+                </div>
+                <img class="w-[560px] h-[315px] object-cover" src="../img/PRO-2.jpg" alt="" data-aos="fade-left">
+            </div>
+        
+            <!-- OELDE OPENAIR -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold">OELDE OPENAIR <span class="font-normal text-3xl">September, 2023</span></h3>
+                    <p>I had the honor of hosting the Oelde Openair.</p>
+                    <p>It was an exhilarating experience as I had never done anything like it before.</p>
+                </div>
+                <img class="w-[560px] h-[315px] object-cover" src="../img/oelde.jpg" alt="" data-aos="fade-left">
+            </div>
+        
+            <!-- COBRA SPELL -->
+            <div data-aos="fade-right" class="flex flex-col md:flex-row items-center gap-10">
+                <div class="max-w-md text-center md:text-left" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold">COBRA SPELL <span class="font-normal text-3xl">May, 2022</span></h3>
+                    <p class="text-lg">I spontaneously jumped in on Cobra Spell's tour because they were looking for a drummer.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-8 justify-center">
+                <div data-aos="fade-up" class="flex flex-col gap-2">
+                    <img class="w-[350px] h-[220px] object-cover" src="../img/essen.jpg" alt="">
+                    <span class="flex justify-center">05.05.2022 ESSEN</span>
+                </div>
+                <div data-aos="fade-up" class="flex flex-col gap-2">
+                    <img class="w-[350px] h-[220px] object-cover" src="../img/rotterdam.jpg" alt="">
+                    <span class="flex justify-center">06.05.2022 ROTTERDAM</span>
+                </div>
+                <div data-aos="fade-up" class="flex flex-col gap-2">
+                    <img class="w-[350px] h-[220px] object-cover" src="../img/munchen.jpg" alt="">
+                    <span class="flex justify-center">20.05.2022 MÜNCHEN</span>
+                </div>
+            </div>
+        
+            <!-- SIMON WILL -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold">SIMON WILL <span class="font-normal text-3xl">September, 2022</span></h3>
+                    <p>I had the pleasure of accompanying my good friend Simon Will on a trip to Milan.</p>
+                </div>
+                <iframe width="560" height="315" src="https://youtube.com/embed/oNHOpS-vKRQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen data-aos="fade-left">
+                </iframe>
+            </div>
+        
+            <!-- PSYCHO VILLAGE -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" data-aos="fade-right">
+                    <h3 class="text-2xl font-bold">PSYCHO VILLAGE <span class="font-normal text-3xl">May, 2017</span></h3>
+                    <p>I was "booked" for the first time to go on tour with Psycho Village from Vienna.</p>
+                </div>
+                <img class="w-[560px] h-[315px] object-cover object-left" src="../img/psycho.jpg" alt="" data-aos="fade-left">
+            </div>
+        
+        </section>
+        
+
+    </body>
+    <script src="../../src/js/global.js"></script>
+    <style is:global>
+        html{
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+    </style>
+</html>

@@ -1,5 +1,5 @@
 {
-  "name": "la-velada-del-ano",
+  "name": "raja-meissner-astro-wailwind",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "3.1.2",
+    "aos": "^2.3.4",
     "astro": "2.4.5",
     "tailwindcss": "3.3.2"
   },
