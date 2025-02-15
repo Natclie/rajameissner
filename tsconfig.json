@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+      "types": ["astro/env"]
+    },
+    "include": [
+      "src/**/*",  
+      "src/**/*.astro"  
+    ]
+  }
+  

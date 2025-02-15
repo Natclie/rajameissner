@@ -20,18 +20,27 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-//NAV
 const menuToggle = document.getElementById("menu-toggle");
 const closeMenu = document.getElementById("close-menu");
 const mobileMenu = document.getElementById("nav-menu-2");
 const menuLinks = document.querySelectorAll("#nav-menu-2 a");
 
-function toggleMenu() {
-    mobileMenu.classList.toggle("translate-x-0");
-    mobileMenu.classList.toggle("opacity-100");
-    mobileMenu.classList.toggle("invisible");
-    menuToggle.classList.toggle("hidden"); 
+function openMenu() {
+  mobileMenu.classList.remove("translate-x-full", "opacity-0", "invisible");
+  mobileMenu.classList.add("translate-x-0", "opacity-100");
+  menuToggle.classList.add("hidden");
 }
+
+function closeMobileMenu() {
+  mobileMenu.classList.remove("translate-x-0", "opacity-100");
+  mobileMenu.classList.add("translate-x-full", "opacity-0", "invisible");
+  menuToggle.classList.remove("hidden");
+}
+
+menuToggle.addEventListener("click", openMenu);
+closeMenu.addEventListener("click", closeMobileMenu);
+menuLinks.forEach(link => link.addEventListener("click", closeMobileMenu));
+
 
 // Eventos
 menuToggle.addEventListener("click", toggleMenu);

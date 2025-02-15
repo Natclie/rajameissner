@@ -1,0 +1,35 @@
+---
+import "aos/dist/aos.css";
+---
+
+<header data-aos="fade-down" class="flex w-full justify-between items-center py-2 px-20">
+    <img class="w-10" src="../img/raja-logo.png" alt="">
+    
+    <!-- NAV DESKTOP -->
+    <nav id="nav-menu" class="hidden lg:flex relative">
+        <!-- Línea animada -->
+        <span id="hover-line" class="absolute bottom-0 h-[2px] bg-black transition-all duration-300 opacity-0"></span>
+
+        <a href="/" class="nav-link px-4 py-2">HOME</a>
+        <a href="/#about" class="nav-link px-4 py-2">ABOUT ME</a>
+        <a href="/#merch" class="nav-link px-4 py-2">MERCH</a>
+        <a href="/#sponsors" class="nav-link px-4 py-2">SPONSORS</a>
+        <a href="/project" class="nav-link px-4 py-2">PROJECTS</a>
+    </nav>
+
+    <button id="menu-toggle" class="lg:hidden text-black text-3xl">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <!-- NAV MÓVIL -->
+    <nav id="nav-menu-2" class="absolute z-50 inset-0 w-full min-h-screen bg-amber-300 text-black flex flex-col items-center justify-center gap-4 duration-300 opacity-0 invisible">
+        <button id="close-menu" class="absolute top-4 right-6 text-3xl">
+          <i class="fa-solid fa-x"></i>
+        </button>
+        <a href="#" class="nav-link text-xl">HOME</a>
+        <a href="#about" class="nav-link text-xl">ABOUT ME</a>
+        <a href="#merch" class="nav-link text-xl">MERCH</a>
+        <a href="#artist" class="nav-link text-xl">SPONSORS</a>
+        <a href="/project" class="nav-link text-xl">PROJECTS</a>
+    </nav>
+</header>

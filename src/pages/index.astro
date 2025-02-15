@@ -1,5 +1,6 @@
 ---
 import "aos/dist/aos.css";
+import Header from '../components/Header.astro';
 ---
 
 <html lang="es">
@@ -13,42 +14,10 @@ import "aos/dist/aos.css";
 
   <body class="">
     <!-- MAIN -->
+      <Header />
     <main class="h-[100vh]">
-      <header data-aos="fade-down" class="flex w-full justify-between items-center py-2 px-20">
-        <img class="w-10" src="../img/raja-logo.png" alt="">
-        
-        <!-- NAV DESKTOP -->
-        <nav id="nav-menu" class="hidden lg:flex relative gap-6">
-            <!-- Línea animada -->
-            <span id="hover-line" class="absolute bottom-0 h-[2px] bg-black transition-all duration-300 opacity-0"></span>
     
-            <a href="#" class="nav-link px-4 py-2">HOME</a>
-            <a href="#about" class="nav-link px-4 py-2">ABOUT ME</a>
-            <a href="#merch" class="nav-link px-4 py-2">MERCH</a>
-            <a href="#sponsors" class="nav-link px-4 py-2">SPONSORS</a>
-            <a href="/project" class="nav-link px-4 py-2">PROJECTS</a>
-        </nav>
-    
-        <button id="menu-toggle" class="lg:hidden text-black text-3xl">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-    
-        <!-- NAV MÓVIL -->
-        <nav id="nav-menu-2" class="fixed z-10 top-0 left-0 w-full h-screen bg-white text-black flex flex-col items-center justify-center gap-4 transform translate-x-full transition-transform duration-300 opacity-0 invisible">
-            <button id="close-menu" class="absolute top-4 right-6 text-3xl">
-              <i class="fa-solid fa-x"></i>
-            </button>
-            <a href="#" class="nav-link text-xl">HOME</a>
-            <a href="#about" class="nav-link text-xl">ABOUT ME</a>
-            <a href="#merch" class="nav-link text-xl">MERCH</a>
-            <a href="#artist" class="nav-link text-xl">SPONSORS</a>
-            <a href="/project" class="nav-link text-xl">PROJECTS</a>
-        </nav>
-    </header>
-    
-    
-
-      <div class="flex flex-col justify-around">
+      <div class="flex flex-col z-0">
           <div data-aos="fade" data-aos-delay="200" class="flex justify-center flex-col items-center m-[40px]">
             <h1 class="text-5xl font-bold mb-5 text-center">RAJA MEISSNER</h1>
             <p class="text-2xl mb-5">Your favorite  girl metalhead drummer.</p>
@@ -70,7 +39,7 @@ import "aos/dist/aos.css";
             </a>
         </div>
         <div data-aos="fade-up" data-aos-delay="400" class="flex justify-center ">
-          <img class="w-[90%] h-[250px] object-cover object-" src="../img/IMG-2.jpg" alt="raja meissner">
+          <img class="z-0 w-[90%] h-[250px] object-cover object-" src="../img/IMG-2.jpg" alt="raja meissner">
         </div>
       </div>
     </main>
