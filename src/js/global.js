@@ -1,5 +1,5 @@
 import AOS from "aos";
-AOS.init({ duration: 800 });
+AOS.init({ duration: 500 });
 
 document.addEventListener('DOMContentLoaded', () => {
     const hoverLine = document.getElementById('hover-line');
@@ -29,12 +29,16 @@ function openMenu() {
   mobileMenu.classList.remove("translate-x-full", "opacity-0", "invisible");
   mobileMenu.classList.add("translate-x-0", "opacity-100");
   menuToggle.classList.add("hidden");
+  document.documentElement.style.overflowY = "hidden";
+
 }
 
 function closeMobileMenu() {
   mobileMenu.classList.remove("translate-x-0", "opacity-100");
   mobileMenu.classList.add("translate-x-full", "opacity-0", "invisible");
   menuToggle.classList.remove("hidden");
+  document.documentElement.style.overflowY = "auto";
+
 }
 
 menuToggle.addEventListener("click", openMenu);
