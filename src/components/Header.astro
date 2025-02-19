@@ -2,19 +2,18 @@
 import "aos/dist/aos.css";
 ---
 
-<header data-aos="fade-down" class="flex w-full justify-between items-center py-2 px-20">
-    <img class="w-10" src="../img/raja-logo.png" alt="">
+<header class="flex w-full justify-between items-center py-2 px-20">
+    <img data-aos="fade-down" class="w-10" src="../img/raja-logo.png" alt="">
     
     <!-- NAV DESKTOP -->
     <nav id="nav-menu" class="hidden lg:flex relative">
-        <!-- Línea animada -->
         <span id="hover-line" class="absolute bottom-0 h-[2px] bg-black transition-all duration-300 opacity-0"></span>
 
-        <a href="/" class="nav-link px-4 py-2">HOME</a>
-        <a href="/#about" class="nav-link px-4 py-2">ABOUT ME</a>
-        <a href="/#merch" class="nav-link px-4 py-2">MERCH</a>
-        <a href="/#sponsors" class="nav-link px-4 py-2">SPONSORS</a>
-        <a href="/project" class="nav-link px-4 py-2">PROJECTS</a>
+        <a data-aos="fade-down" data-aos-delay="100" href="/" class="nav-link px-4 py-2">HOME</a>
+        <a data-aos="fade-down" data-aos-delay="150" href="/#about" class="nav-link px-4 py-2">ABOUT ME</a>
+        <a data-aos="fade-down" data-aos-delay="200" href="/#merch" class="nav-link px-4 py-2">MERCH</a>
+        <a data-aos="fade-down" data-aos-delay="250" href="/#sponsors" class="nav-link px-4 py-2">SPONSORS</a>
+        <a data-aos="fade-down" data-aos-delay="300" href="/project" class="nav-link px-4 py-2">PROJECTS</a>
     </nav>
 
     <button id="menu-toggle" class="lg:hidden text-black text-3xl">

@@ -38,7 +38,6 @@ function closeMobileMenu() {
   mobileMenu.classList.add("translate-x-full", "opacity-0", "invisible");
   menuToggle.classList.remove("hidden");
   document.documentElement.style.overflowY = "auto";
-
 }
 
 menuToggle.addEventListener("click", openMenu);
