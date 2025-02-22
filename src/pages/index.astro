@@ -15,17 +15,17 @@ import Header from '../components/Header.astro';
   <body class="">
     <!-- MAIN -->
       <Header />
-    <main class="h-[100vh]">
+    <main class="min-h-screen flex flex-col justify-between">
     
       <div class="flex flex-col z-0">
           <div class="flex justify-center flex-col items-center m-[40px]">
             <h1 data-aos="fade-up" class="text-5xl font-bold mb-5 text-center">RAJA MEISSNER</h1>
             <p data-aos="fade-up" data-aos-delay="100" class="text-2xl mb-5">Your favorite  girl metalhead drummer.</p>
             <div data-aos="fade-up" data-aos-delay="200" class="mb-5">
-              <a href="#"><i class="fa-brands fa-patreon fa-xl scale-[150%] m-4"></i></a>
-              <a href="#"><i class="fa-brands fa-instagram fa-xl scale-[150%] m-4"></i></a>
-              <a href="#"><i class="fa-brands fa-youtube fa-xl scale-[150%] m-4"></i></a>
-              <a href="#"><i class="fa-brands fa-tiktok fa-xl scale-[150%] m-4"></i></a>
+              <a target="_blank" href="https://www.patreon.com/rajameissner"><i class="fa-brands fa-patreon fa-xl scale-[150%] m-4"></i></a>
+              <a target="_blank" href="https://www.instagram.com/rajameissner"><i class="fa-brands fa-instagram fa-xl scale-[150%] m-4"></i></a>
+              <a target="_blank" href="https://www.youtube.com/channel/UCeS5dtjbiQ3gDiJF4gm8Eqw"><i class="fa-brands fa-youtube fa-xl scale-[150%] m-4"></i></a>
+              <a target="_blank" href="https://www.tiktok.com/@rajameissner"><i class="fa-brands fa-tiktok fa-xl scale-[150%] m-4"></i></a>
             </div>
             <a data-aos="fade-up" data-aos-delay="300"  href="#about"
               class="group/button relative inline-flex items-center justify-center overflow-hidden rounded-md bg-black backdrop-blur-lg px-1 py-1 w-[200px] text-base font-semibold text-white transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-gray-600/50 border border-white/20 cursor-pointer"
@@ -49,19 +49,19 @@ import Header from '../components/Header.astro';
       <div class="flex gap-6 justify-center items-center about-con">
         <div data-aos="fade-right" class="max-w-xl flex flex-col justify-center p-5">
           <h2 class="font-bold text-5xl">BIOGRAPHY</h2>
-          <p class="my-2 text-lg text-gray-900">
+          <p class="my-2 text-lg text-black">
             I was born in Germany, <span class="font-bold text-black">Frankfurt/Main</span> on <span class="font-bold text-black">March 6, 2000.</span>
           </p>
-          <p class="my-2 text-xl text-gray-900">
+          <p class="my-2 text-xl text-black">
             After playing Oboe for 6 years, I started playing drums at the age of 14.
           </p>
-          <p class="my-2 text-xl text-gray-900">
+          <p class="my-2 text-xl text-black">
             I started in a school band, played with the band Santa Jaws in 2016 and drummed the Germany tour of Psychovillage from Austria when I was 17.
           </p>
-          <p class="my-2 text-xl text-gray-900">
+          <p class="my-2 text-xl text-black">
             In 2019, I started uploading drum covers on Instagram and later on YouTube.
           </p>
-          <p class="my-2 text-xl text-gray-900">
+          <p class="my-2 text-xl text-black">
             Now I'm a full-time drummer and my biggest inspiration, as I'm sure you all know, is JOEY JORDISON and MEYTALL COHEN!
           </p>
           <p class="my-2 text-xl text-black font-bold">
@@ -81,15 +81,26 @@ import Header from '../components/Header.astro';
         <div class="grid self-center text-center">
           <h3 data-aos="fade-up" class="font-bold text-4xl mb-3">CHECK OUT MY LIMITED MERCH COLLECTION</h3>
           <p data-aos="fade-up" data-aos-delay="50" class="text-xl text-gray-900 mb-3">Only as long as stocks last!</p>
-            <span data-aos="fade-up" data-aos-delay="150" class="m-auto transition-all duration-[.2s] bg-black w-[120px] h-[40px] items-center flex justify-center rounded-2xl text-[17px] hover:text-[18px]">
-              <a target="_blank" href="https://krasserstoff.com/raja-meissner" class="text-white">
-                SHOP <i class="fa-solid fa-store m-1"></i>
-              </a>
-            </span>
+            
         </div>
+        <div class="flex justify-center flex-wrap">
+          <a target="_blank" data-aos="fade-up" href="https://krasserstoff.com/raja-meissner/products/raja-meissner-logo-t-shirt-schwarz">
+            <img class="w-[250px]" src="../img/merch/merch1.webp" alt="t-shirt raja meissner">
+          </a>
+          <a target="_blank" data-aos="fade-up" href="https://krasserstoff.com/raja-meissner/products/raja-meissner-logo-tanktop-schwarz">
+            <img class="w-[250px]" src="../img/merch/merch2.webp" alt="tank top rajameissner">
+          </a>
+          <a target="_blank" data-aos="fade-up" href="https://krasserstoff.com/raja-meissner/products/raja-meissner-logo-cap-schwarz">
+            <img class="w-[250px]" src="../img/merch/merch3.webp" alt="cap raja meissner">
+          </a>
+        </div>
+        <span data-aos="fade-up" data-aos-delay="150" class="m-auto  bg-black w-[150px] h-[40px] items-center flex justify-center rounded-2xl text-[17px] hover:text-[18px]">
+          <a target="_blank" href="https://krasserstoff.com/raja-meissner" class="text-white transition-all duration-[.2s]">
+            SHOP <i class="fa-solid fa-store m-1"></i>
+          </a>
+        </span>
      </section>
 
-     <span class="absolute left-1/2 h-1 w-[350px] bg-black -translate-x-1/2"></span>
 
      <!-- SPONSORS -->
       <section id="sponsors" data-aos="fade" class="py-1">

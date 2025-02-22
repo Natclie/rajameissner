@@ -13,8 +13,8 @@ import Header from '../components/Header.astro';
         <title>RAJA MEISSNER</title>
     </head>
     <body>
-        <main class="h-[100vh]">
-            <Header />
+        <Header />
+        <main class="min-h-[100vh] flex flex-col justify-center">
           <div data-aos="fade-up" data-aos-delay="300" class="flex justify-center ">
             <img class="w-[90%] h-[250px] object-cover object-" src="../img/PRO-1.jpg" alt="raja meissner">
           </div>
@@ -30,7 +30,7 @@ import Header from '../components/Header.astro';
           </main>
 
           <!-- PROJECTS -->
-          <section class="max-w-6xl mx-auto px-4 space-y-16">
+          <section id="projects" class="max-w-6xl mx-auto px-4 space-y-16">
 
             <!-- MARTI FISCHER - SOAD -->
             <div class="flex flex-col md:flex-row items-center justify-center gap-10">
