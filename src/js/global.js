@@ -1,5 +1,5 @@
-import AOS from "aos";
-AOS.init({ duration: 500 });
+// import AOS from "aos";
+// AOS.init({ duration: 500 });
 
 document.addEventListener('DOMContentLoaded', () => {
     const hoverLine = document.getElementById('hover-line');
