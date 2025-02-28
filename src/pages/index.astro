@@ -1,8 +1,9 @@
 ---
 import Header from '../components/Header.astro';
+import Merch from '../components/Merch.jsx';
+import "aos/dist/aos.css";
 ---
 <!-- 
-import "aos/dist/aos.css";
  -->
 <html lang="es">
   <head>
@@ -78,29 +79,13 @@ import "aos/dist/aos.css";
 
 
     <!-- MERCH -->
-     <section id="merch" class="flex flex-col justify-center mb-10">
-        <div class="grid self-center text-center">
-          <h3 data-aos="fade-up" class="font-bold text-4xl mb-3">CHECK OUT MY LIMITED MERCH COLLECTION</h3>
-          <p data-aos="fade-up" data-aos-delay="50" class="text-xl text-gray-900 mb-3">Only as long as stocks last!</p>
-            
+     <section data-aos="fade-up" id="merch" class="flex flex-col justify-center mb-10">
+        <div class="flex justify-center items-center gap-3 flex-col">
+          <h2 class="font-bold text-5xl">MERCH</h2>
+          <p class="text-xl mb-5">Check out my limited merch collection, only as long as stocks last!</p>
         </div>
-        <div class="flex justify-center flex-wrap">
-          <a target="_blank" data-aos="fade-up" href="https://krasserstoff.com/raja-meissner/products/raja-meissner-logo-t-shirt-schwarz">
-            <img class="w-[250px]" src="../img/merch/merch1.webp" alt="t-shirt raja meissner">
-          </a>
-          <a target="_blank" data-aos="fade-up" href="https://krasserstoff.com/raja-meissner/products/raja-meissner-logo-tanktop-schwarz">
-            <img class="w-[250px]" src="../img/merch/merch2.webp" alt="tank top rajameissner">
-          </a>
-          <a target="_blank" data-aos="fade-up" href="https://krasserstoff.com/raja-meissner/products/raja-meissner-logo-cap-schwarz">
-            <img class="w-[250px]" src="../img/merch/merch3.webp" alt="cap raja meissner">
-          </a>
-        </div>
-        <span data-aos="fade-up" data-aos-delay="150" class="m-auto  bg-black w-[150px] h-[40px] items-center flex justify-center rounded-2xl text-[17px] hover:text-[18px]">
-          <a target="_blank" href="https://krasserstoff.com/raja-meissner" class="text-white transition-all duration-[.2s]">
-            SHOP <i class="fa-solid fa-store m-1"></i>
-          </a>
-        </span>
-     </section>
+        <Merch />
+      </section>
 
 
      <!-- SPONSORS -->
@@ -222,7 +207,6 @@ import "aos/dist/aos.css";
     display: flex;
 }
 
-/* Animaciones del menú móvil */
 .menu-open {
     transform: translateX(0) !important;
 }
