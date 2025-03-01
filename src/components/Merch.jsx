@@ -25,12 +25,12 @@ const Merch = () => {
   return (
     <div className="flex flex-wrap justify-center gap-4 p-4">
       {merch.map((item, index) => (
-        <div data-aos="fade-up" key={index} className="box pb-4 shadow-xl shadow-black/10 text-[0.9rem] rounded-3xl text-center w-[300px]  bg-white">
+        <div data-aos="fade-up" key={index} className="box pb-4 border-2 overflow-hidden border-black/50 text-[0.9rem] rounded-3xl text-center w-[300px]">
           <img src={item.img} alt={item.name} className="w-full h-[300px] object-cover" />
           <p className="text-black font-bold m-1">{item.name}</p>
           <p className="text-black mb-3">{item.desc}</p>
           <span>
-            <a target="_blank" href={item.href} className="bg-black text-white px-4 py-1.5 rounded-full">Buy <i class="fa-solid fa-shop"></i></a>
+            <a target="_blank" href={item.href} className="bg-black text-white px-10 py-1.5 rounded-full">Buy <i class="fa-solid fa-shop pl-1"></i></a>
           </span>
         </div>
       ))}
