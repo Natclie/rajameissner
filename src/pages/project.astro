@@ -3,7 +3,6 @@
 import '/src/styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import Projects from '../components/Projects.jsx';
 ---
 
 <html lang="en">
@@ -17,10 +16,10 @@ import Projects from '../components/Projects.jsx';
     <body class="flex flex-col justify-center items-center overflow-x-hidden">
         <Header />
         <main class="min-h-[100vh] flex flex-col justify-center w-full">
-          <div data-aos="fade-up" data-aos-delay="300" class="flex justify-center ">
+          <div class="flex justify-center ">
             <img class="w-[90%] h-[250px] object-cover object-" src="../img/PRO-1.jpg" alt="raja meissner">
           </div>
-          <div data-aos="fade-up" data-aos-delay="500" class="flex p-5 flex-col items-center py-10 gap-5">
+          <div class="flex p-5 flex-col items-center py-10 gap-5">
             <h2 class="text-5xl font-bold">PROJECTS</h2>
             <p class="text-xl">Watch out my projects, you can also watch full of them and my videos on my <a class="underline" target="_blank" href="https://youtube.com">YouTube</a> channel!</p>
             <a href="#projects"
@@ -31,7 +30,110 @@ import Projects from '../components/Projects.jsx';
           </div>
           </main>
 
-          <Projects />
+          <!-- PROJECTS -->
+          <section id="projects" class="max-w-6xl mx-auto px-4 space-y-16 items-center justify-center w-full">
+
+            <!-- MARTI FISCHER - SOAD -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" >
+                    <h3 class="text-2xl font-bold">MARTI FISCHER - SOAD <span class="font-normal text-3xl">April, 2024</span></h3>
+                    <p>I supported <span>Marti Fischer</span> with his new video "The Sound of SYSTEM OF A DOWN"! We wrote a song a la SOAD and then recorded it.</p>
+                    <p>It was so much fun to work with Marti! Check out the video!</p>
+                </div>
+                <div class="w-full max-w-[400px] md:max-w-xl lg:max-w-2xl aspect-video">
+                    <iframe class="w-[89%] mx-auto h-full" src="https://www.youtube.com/embed/v5q30VphHzg"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        
+            <!-- MIKE SHINODA - ALREADY OVER SESSIONS -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" >
+                    <h3 class="text-2xl font-bold">MIKE SHINODA - ALREADY OVER SESSIONS <span class="font-normal text-3xl">January, 2024</span></h3>
+                    <p>I had the great honor of working with Mike Shinoda!</p>
+                    <p>Mike is one of the most creative people I know and is such a good producer, musician and has such a great personality.</p>
+                </div>
+                <div class="w-full max-w-md md:max-w-xl lg:max-w-2xl aspect-video">
+                    <iframe class="w-[89%] mx-auto h-full"
+                        src="https://www.youtube.com/embed/kt-1Ddhe8W0"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        
+            <!-- EU - Tour with BÖSE FUCHS -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" >
+                    <h3 class="text-2xl font-bold">EU - Tour with BÖSE FUCHS <span class="font-normal text-3xl">November, 2023</span></h3>
+                    <p>We were on the road the whole of November 2023, 19 cities, 7 countries!</p>
+                    <p>This tour showed me once again that I LOVE playing live!</p>
+                </div>
+                <img class="w-[560px] h-[315px] object-cover" src="../img/PRO-2.jpg" alt="">
+            </div>
+        
+            <!-- OELDE OPENAIR -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" >
+                    <h3 class="text-2xl font-bold">OELDE OPENAIR <span class="font-normal text-3xl">September, 2023</span></h3>
+                    <p>I had the honor of hosting the Oelde Openair.</p>
+                    <p>It was an exhilarating experience as I had never done anything like it before.</p>
+                </div>
+                <img class="w-[560px] h-[315px] object-cover" src="../img/oelde.jpg" alt="" >
+            </div>
+        
+            <!-- COBRA SPELL -->
+            <div  class="flex flex-col md:flex-row items-center gap-10">
+                <div class="max-w-md text-center md:text-left" >
+                    <h3 class="text-2xl font-bold">COBRA SPELL <span class="font-normal text-3xl">May, 2022</span></h3>
+                    <p class="text-lg">I spontaneously jumped in on Cobra Spell's tour because they were looking for a drummer.</p>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap gap-8 justify-center">
+                <div  class="flex flex-col gap-2">
+                    <img class="w-[350px] h-[220px] object-cover" src="../img/essen.jpg" alt="">
+                    <span class="flex justify-center">05.05.2022 ESSEN</span>
+                </div>
+                <div  class="flex flex-col gap-2">
+                    <img class="w-[350px] h-[220px] object-cover" src="../img/rotterdam.jpg" alt="">
+                    <span class="flex justify-center">06.05.2022 ROTTERDAM</span>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <img class="w-[350px] h-[220px] object-cover" src="../img/munchen.jpg" alt="">
+                    <span class="flex justify-center">20.05.2022 MÜNCHEN</span>
+                </div>
+            </div>
+        
+            <!-- SIMON WILL -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" >
+                    <h3 class="text-2xl font-bold">SIMON WILL <span class="font-normal text-3xl">September, 2022</span></h3>
+                    <p>I had the pleasure of accompanying my good friend Simon Will on a trip to Milan.</p>
+                </div>
+                <div class="w-full max-w-md md:max-w-xl lg:max-w-2xl aspect-video">
+                <iframe class="w-[89%] mx-auto h-full" src="https://youtube.com/embed/oNHOpS-vKRQ"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen >
+                </iframe>
+                </div>
+            </div>
+        
+            <!-- PSYCHO VILLAGE -->
+            <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                <div class="max-w-md text-center md:text-left" >
+                    <h3 class="text-2xl font-bold">PSYCHO VILLAGE <span class="font-normal text-3xl">May, 2017</span></h3>
+                    <p>I was "booked" for the first time to go on tour with Psycho Village from Vienna.</p>
+                </div>
+                <img class="w-[560px] h-[315px] object-cover object-left" src="../img/psycho.jpg" alt="" >
+            </div>
+        
+        </section>
         <!-- FOOTER -->
        <section>
         <Footer />
