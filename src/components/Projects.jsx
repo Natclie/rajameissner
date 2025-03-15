@@ -47,16 +47,12 @@ const projects = [
     }
   ];
   
+  const Projects = () => {
     return (
       <section id="projects" className="max-w-6xl mx-auto px-4 space-y-16 items-center justify-center w-full">
         {projects.map((project, index) => (
           <div key={index} className="flex flex-col md:flex-row items-center justify-center gap-10">
-            <div className="max-w-md text-center md:text-left" data-aos="fade-right">
-              <h3 className="text-2xl font-bold">
-                {project.title} <span className="font-normal text-3xl">{project.date}</span>
-              </h3>
-              <p>{project.description}</p>
-            </div>
+            
             {project.video ? (
               <div className="w-full max-w-md md:max-w-xl lg:max-w-2xl aspect-video">
                 <iframe className="w-[89%] mx-auto h-full" src={project.video} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen data-aos="fade-left"></iframe>
@@ -64,17 +60,30 @@ const projects = [
             ) : project.image ? (
               <img className="w-[560px] h-[315px] object-cover" src={project.image} alt={project.title} data-aos="fade-left" />
             ) : project.images ? (
-              <div className="flex flex-wrap gap-8 justify-center">
-                {project.images.map((img, imgIndex) => (
-                  <div key={imgIndex} data-aos="fade-up" className="flex flex-col gap-2">
-                    <img className="w-[350px] h-[220px] object-cover" src={img.src} alt={img.caption} />
-                    <span className="flex justify-center">{img.caption}</span>
-                  </div>
-                ))}
-              </div>
+            <div className="flex flex-col gap-8 justify-center">
+            
+                <div className="max-w-md text-center md:text-left" data-aos="fade-right">
+                    <h3 className="text-2xl font-bold">
+                    {project.title} <span className="font-normal text-3xl">{project.date}</span>
+                    </h3>
+                    <p className="text-md">{project.description}</p>
+                </div>
+
+                <div className="flex flex-wrap gap-4 justify-center">
+                    {project.images.map((img, imgIndex) => (
+                        <div key={imgIndex} data-aos="fade-up" className="flex flex-col">
+                            <img className="w-[350px] h-[220px] object-cover" src={img.src} alt={img.caption} />
+                            <p className="text-md text-center">{img.caption}</p>
+                        </div>
+                    ))}
+                </div>
+
+            </div>
             ) : null}
           </div>
         ))}
       </section>
     );
-    export default Projects
+  };
+  
+  export default Projects;
